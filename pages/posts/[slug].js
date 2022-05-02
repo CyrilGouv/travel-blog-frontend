@@ -2,12 +2,14 @@ import Image from "next/image"
 import ReactMarkdown from "react-markdown"
 import { API_URL } from "../../config/constants"
 import Tag from "../../components/Tag"
+import Map from "../../components/Map"
 
 import styles from '../../styles/Post.module.css'
 
 
 const post= ({ post }) => {
     const article = post.attributes
+    const { latitude, longitude } = article.localisation
 
     return (
         <>
@@ -28,6 +30,10 @@ const post= ({ post }) => {
                     <div className={ styles.info }>
                         <p>Posted by: { article.auteur.data.attributes.pseudo }</p>
                         <Image src={ article.auteur.data.attributes.avatar.data.attributes.formats.thumbnail.url } width={ 50 } height={ 50 } className={ styles.avatar } layout='fixed' />
+                    </div>
+
+                    <div className={ styles.map }>
+                        <Map longitude={ longitude } latitude={ latitude } />
                     </div>
                 </article>
             }
