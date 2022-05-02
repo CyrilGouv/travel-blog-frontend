@@ -1,0 +1,52 @@
+.showcase {
+    padding: 5rem 0;
+    background: url(/bg-home.jpeg) no-repeat center center;
+    background-size: cover;
+}
+
+.showcase__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.showcase__intro {
+    width: 48%;
+}
+
+.showcase__intro__title {
+    font-size: 3.6875rem;
+    width: 80%;
+    line-height: 1.25;
+    margin: 0;
+}
+
+.showcase__intro__para {
+    font-size: 1.25rem;
+    width: 80%;
+    margin: 0;
+    padding: 2rem 0 2.25rem 0;
+    line-height: 1.4;
+}
+
+.showcase__intro__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.showcase__img {
+    position: relative;
+    overflow: hidden;
+    width: 48%;
+    height: 680px;
+}
+
+.showcase__img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}

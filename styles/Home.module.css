@@ -2,8 +2,13 @@
   width: 100%;
 }
 
-.posts {
+.blog {
+  padding: 5rem 0;
+  background-color: var(--beige);
+}
+
+.blog__posts {
+  padding-top: 4rem;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }

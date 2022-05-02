@@ -14,7 +14,7 @@ const Tag = ({ title, id }) => {
         break;
 
       case 'family':
-        color = 'rgb(138,173,138)'
+        color = '#59815B'
         break;
     
       default:

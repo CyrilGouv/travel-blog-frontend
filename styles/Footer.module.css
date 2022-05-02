@@ -1,0 +1,34 @@
+.footer {
+    padding: 1.5rem 0;
+    background-color: var(--green);
+    color: var(--beige);
+}
+
+.footer__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__socials,
+.footer__copyright {
+    width: 48%;
+}
+
+.footer__socials {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.footer__socials li {
+    margin-right: 1rem;
+}
+.footer__socials li:last-of-type {
+    margin-right: 0;
+}
+
+.footer__copyright {
+    text-align: right;
+}

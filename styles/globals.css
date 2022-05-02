@@ -1,9 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Oswald&display=swap');
+
+:root {
+  /* Colors */
+  --green: #59815B;
+  --beige: #EDEAE1;
+  --gray: #878787;
+
+  --black: #000000;
+  --white: #FFFFFF;
+
+  /* Fonts */
+  --titleFont: 'Oswald', sans-serif;
+  --mainFont: 'Mulish', sans-serif;
+}
+
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
-  color: rgb(70,70,70);
+  font-family: var(--mainFont);
+  color: var(--black);
 }
 
 a {
@@ -15,13 +32,17 @@ a {
   box-sizing: border-box;
 }
 
-
-/* App */
-.app--container {
-  display: flex;
-  background-color: rgb(145,156,143);
+p {
+  color: var(--gray);
 }
 
+h1, h2, h3, h4 {
+  font-family: var(--titleFont);
+  color: var(--black);
+  text-transform: uppercase;
+}
 
-
-/* Homepage */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
