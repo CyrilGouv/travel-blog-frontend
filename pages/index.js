@@ -38,7 +38,7 @@ const Home = ({ articles }) => {
 }
 
 export async function getStaticProps() {
-  const res = await fetch(`${API_URL}/blogs?populate=*`)
+  const res = await fetch(`${API_URL}/blogs?populate=*&sort=publishedAt:DESC&limit=3`)
   const articles = await res.json()
 
   return {

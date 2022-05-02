@@ -9,7 +9,13 @@ import styles from '../styles/Card.module.css'
 const Card = ( { post } ) => {
 
   const article = post.attributes
-  
+  let img
+
+  if (article.image.data.attributes.formats) {
+    img = article.image.data.attributes.formats.small.url
+  } else {
+    img = article.image.data.attributes.url
+  }
   
   return (
 
@@ -20,7 +26,7 @@ const Card = ( { post } ) => {
      
         <Link href={`/posts/${article.slug}`} className={ styles.card__link }>
           <div className={ styles.card__img }>
-            <Image alt={ article.titre } src={ article.image.data.attributes.formats.small.url } layout='fill' />
+            <Image alt={ article.titre } src={ img } layout='fill' />
           </div>
         </Link>
       

@@ -1,10 +1,10 @@
-.category__header {
+.blog__header {
     padding: 5rem 0;
 }
 
-.category__posts {
+.blog__posts {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 5rem;
     flex-wrap: wrap;
+    padding-bottom: 5rem;
 }

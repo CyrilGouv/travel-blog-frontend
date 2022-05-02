@@ -1,5 +1,6 @@
 .card {
     width: 30%;
+    padding-bottom: 3rem;
 }
 
 .card__title {

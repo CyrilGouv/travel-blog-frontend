@@ -22,7 +22,7 @@ const Navbar = () => {
             <ul className={ styles.navbar__menu}>
                 <li className={ router.pathname == '/' ? `${styles.navbar__menu__active}` : '' }><Link href='/'>Home</Link></li>
                 <li><Link href='#'>About</Link></li>
-                <li className={ router.pathname == '/blog' ? `${styles.navbar__menu__active}` : '' }><Link href='/'>Blog</Link></li>
+                <li className={ router.pathname == '/blog' ? `${styles.navbar__menu__active}` : '' }><Link href='/blog'>Blog</Link></li>
                 <li><Link href='#'>Contact</Link></li>
             </ul>
         </nav>

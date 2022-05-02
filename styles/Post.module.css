@@ -1,0 +1,79 @@
+.post__header {
+    padding: 5rem 0 0 0;
+}
+
+.post__tag {
+    display: flex;
+    justify-content: center;
+}
+
+.post__tag div:first-of-type + div {
+    margin-right: 1.25rem;
+}
+
+.post__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+
+.post__info__posted {
+    display: flex;
+    align-items: center;   
+}
+
+.post__info__posted__icon {
+    font-size: 1.125rem;
+}
+
+.post__info__posted span {
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+.post__avatar {
+    border-radius: 50%;
+}
+
+.post__img {
+    position: relative;
+    width: 100%;
+    height: 680px;
+    margin: 5rem 0;
+}
+
+.post__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post__content h2 {
+    font-size: 2.0625rem;
+}
+
+.post__content p {
+    font-size: 1.125rem;
+    line-height: 1.45;
+    padding-bottom: 1rem;
+}
+
+.post__content img {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+}
+
+.post__map {
+    width: 100%;
+    height: 650px;
+}
+
+.post__map div {
+    width: 100%;
+    height: 100%;
+}
+
+.post__map .mapboxgl-canary {
+    display: none;
+}
